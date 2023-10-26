@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-url: url("/images/noise.png");
+
+    --globe-style: 0;
+
+    --blue: rgb(2, 111, 243);
+
+    --background: 0 0% 95%;
+    --foreground: 0 0% 0%;
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --border: 0 0% 92%;
+    --input: 0 0% 92%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 210 40% 98%;
+    --primary-h: 0;
+    --primary-s: 0%;
+    --primary-l: 0%;
+
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 0%;
+    --secondary-h: 0;
+    --secondary-s: 0%;
+    --secondary-l: 90%;
+
+    --accent: 0 0% 80%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background-url: url("/images/noise.png");
+
+    --globe-style: 3;
+
+    --blue: #026ff3;
+
+    --background: 0 0% 0%;
+    --foreground: 0 0% 91%;
+
+    --muted: 0 0% 11%;
+    --muted-foreground: 0 0% 67%;
+
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 44%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 0 100% 100%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+    --primary-h: 0;
+    --primary-s: 100%;
+    --primary-l: 100%;
+
+    --secondary: 0 0% 40%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-h: 213;
+    --secondary-s: 98%;
+    --secondary-l: 47%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+.b-r {
+  border: 1px solid red;
+}
+
+.b-b {
+  border: 1px solid blue;
+}
