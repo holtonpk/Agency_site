@@ -37,8 +37,8 @@ const Benefits = () => {
 
       <h1 className="text-5xl font-bold text-center">Membership benefits</h1>
       <p className="text-xl text-center">
-        Perks so good you'll never need to go anywhere else for your design.
-        Seriously.
+        Perks so good you&apos;ll never need to go anywhere else for your
+        design. Seriously.
       </p>
       <div className="grid grid-cols-4 gap-10 mt-10 z-10 relative">
         {benefits.map((benefit, i) => (

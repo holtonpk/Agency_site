@@ -17,9 +17,9 @@ const Hero = () => {
             Digital marketing is hard.. not for us
           </h1>
           <p className="text-xl text-muted-foreground ">
-            Tackling digital marketing can be a daunting task, but you don't
-            have to face it alone. Our team of seasoned experts is here to ease
-            the burden and guide you toward success.
+            Tackling digital marketing can be a daunting task, but you
+            don&apos;t have to face it alone. Our team of seasoned experts is
+            here to ease the burden and guide you toward success.
           </p>
           <div className="flex">
             <LinkButton

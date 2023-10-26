@@ -1,15 +1,15 @@
 "use client";
-import { useMemo, useState } from "react";
+import {useMemo, useState} from "react";
 import Confetti from "react-dom-confetti";
-import { Icons } from "@/components/icons";
+import {Icons} from "@/components/icons";
 import Switch from "@/components/ui/switch";
 import Tooltip from "@/components/ui/tooltip";
-import { Product } from "@/types";
+import {Product} from "@/types";
 
-import { siteConfig } from "@/config/site";
-import { Button } from "@/components/ui/button";
-import { LinkButton } from "@/components/ui/link";
-import { useRouter } from "next/navigation";
+import {siteConfig} from "@/config/site";
+import {Button} from "@/components/ui/button";
+import {LinkButton} from "@/components/ui/link";
+import {useRouter} from "next/navigation";
 
 const plans = [
   {
@@ -17,16 +17,16 @@ const plans = [
     name: "Monthly",
     description: "Pause or cancel anytime.",
     icon: "gem",
-    price: { id: "price_1NLWnVEewcpAM4MfkryhNa63", unit_amount: 25000 },
+    price: {id: "price_1NLWnVEewcpAM4MfkryhNa63", unit_amount: 25000},
 
     firebaseRole: "2",
     features: [
-      { text: "Access to Top Accounts" },
-      { text: "Access to Product Database" },
-      { text: "Access to Accounts Database" },
-      { text: "Unlimited Account Collections" },
-      { text: "Unlimited Product Tracking" },
-      { text: "Unlimited Product Searches" },
+      {text: "Access to Top Accounts"},
+      {text: "Access to Product Database"},
+      {text: "Access to Accounts Database"},
+      {text: "Unlimited Account Collections"},
+      {text: "Unlimited Product Tracking"},
+      {text: "Unlimited Product Searches"},
     ],
   },
   {
@@ -34,16 +34,16 @@ const plans = [
     name: "Quarterly",
     description: "Save $20 per month ",
     icon: "bolt",
-    price: { id: "price_1NLWlOEewcpAM4MfQnvrGA51", unit_amount: 23000 },
+    price: {id: "price_1NLWlOEewcpAM4MfQnvrGA51", unit_amount: 23000},
 
     firebaseRole: "1",
     features: [
-      { text: "Access to Top Accounts" },
-      { text: "Access to Product Database" },
-      { text: "Access to Accounts Database" },
-      { text: "Unlimited Account Collections", negative: true },
-      { text: "Unlimited Product Tracking", negative: true },
-      { text: "Unlimited Product Searches", negative: true },
+      {text: "Access to Top Accounts"},
+      {text: "Access to Product Database"},
+      {text: "Access to Accounts Database"},
+      {text: "Unlimited Account Collections", negative: true},
+      {text: "Unlimited Product Tracking", negative: true},
+      {text: "Unlimited Product Searches", negative: true},
     ],
   },
   {
@@ -51,16 +51,16 @@ const plans = [
     name: "Yearly",
     description: "Save $50 per month",
     icon: "bolt",
-    price: { id: "price_1NLWlOEewcpAM4MfQnvrGA51", unit_amount: 20000 },
+    price: {id: "price_1NLWlOEewcpAM4MfQnvrGA51", unit_amount: 20000},
 
     firebaseRole: "1",
     features: [
-      { text: "Access to Top Accounts" },
-      { text: "Access to Product Database" },
-      { text: "Access to Accounts Database" },
-      { text: "Unlimited Account Collections", negative: true },
-      { text: "Unlimited Product Tracking", negative: true },
-      { text: "Unlimited Product Searches", negative: true },
+      {text: "Access to Top Accounts"},
+      {text: "Access to Product Database"},
+      {text: "Access to Accounts Database"},
+      {text: "Unlimited Account Collections", negative: true},
+      {text: "Unlimited Product Tracking", negative: true},
+      {text: "Unlimited Product Searches", negative: true},
     ],
   },
 ];
@@ -73,7 +73,7 @@ export default function Pricing() {
     >
       <h1 className="text-6xl font-bold text-background">Memberships levels</h1>
       <p className="text-lg mt-4 text-background">
-        Choose a plan that's right for you.
+        Choose a plan that&apos;s right for you.
       </p>
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-3  mx-auto mt-6">
@@ -92,12 +92,7 @@ interface PlanCardProps {
   success_url?: string;
 }
 
-const PlanCard = ({
-  plan,
-  popular,
-  cancel_url,
-  success_url,
-}: PlanCardProps) => {
+const PlanCard = ({plan, popular, cancel_url, success_url}: PlanCardProps) => {
   const Icon = Icons[plan.icon as keyof typeof Icons];
 
   const [isLoading, setIsLoading] = useState(false);
